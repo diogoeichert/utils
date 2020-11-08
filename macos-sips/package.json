@@ -1,0 +1,30 @@
+{
+  "name": "macos-sips",
+  "version": "1.0.0",
+  "description": "wrapper for the macOS scriptable image processing system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogoeichert/macos-sips.git"
+  },
+  "keywords": [
+    "icns",
+    "icon",
+    "image",
+    "macos",
+    "processing",
+    "scriptable",
+    "sips",
+    "system",
+    "wrapper"
+  ],
+  "author": "Diogo Eichert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diogoeichert/macos-sips/issues"
+  },
+  "homepage": "https://github.com/diogoeichert/macos-sips#readme"
+}

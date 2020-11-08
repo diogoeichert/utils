@@ -1,0 +1,24 @@
+{
+  "name": "roman",
+  "version": "1.0.0",
+  "description": "Roman number parser",
+  "main": "roman.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogoschneider/roman.git"
+  },
+  "keywords": [
+    "roman",
+    "number",
+    "parser"
+  ],
+  "author": "Diogo Schneider",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diogoschneider/roman/issues"
+  },
+  "homepage": "https://github.com/diogoschneider/roman#readme"
+}

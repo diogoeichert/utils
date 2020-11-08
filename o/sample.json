@@ -1,0 +1,80 @@
+// sample tree generated from sample.o
+
+{
+	"objects": [
+		{
+			"name": "ParentThing",
+			"methods": [
+				{
+					"name": "constructor",
+					"parameters": [
+						"a",
+						"b"
+					]
+				}
+			]
+		},
+		{
+			"name": "Thing",
+			"members": [
+				{
+					"name": "number",
+					"value": "12345"
+				}
+			],
+			"methods": [
+				{
+					"name": "do",
+					"parameters": [
+						"list"
+					],
+					"statements": [
+						{
+							"type": "for",
+							"index": "i",
+							"list": "list",
+							"statements": [
+								{
+									"type": "call",
+									"method": "print",
+									"parameters": [
+										"list[i]"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"methods": [
+		{
+			"name": "blah",
+			"statements": [
+				{
+					"type": "assignment",
+					"recipient": "t",
+					"value": {
+						"type": "instance",
+						"object": "Thing"
+					}
+				},
+				{
+					"type": "call",
+					"object": "t",
+					"method": "do"
+				}
+			]
+		},
+		{
+			"name": "main",
+			"statements" : [
+				{
+					"type": "call",
+					"method": "blah"
+				}
+			]
+		}
+	]
+}

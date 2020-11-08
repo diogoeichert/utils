@@ -1,0 +1,27 @@
+{
+  "name": "webqueue",
+  "version": "1.1.2",
+  "description": "simple web queue and stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "eslint . && node ./test.js"
+  },
+  "keywords": [
+    "queue",
+    "stack",
+    "web"
+  ],
+  "author": "Diogo Eichert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diogoeichert/webqueue/issues"
+  },
+  "homepage": "https://github.com/diogoeichert/webqueue#readme",
+  "dependencies": {
+    "wideweb": "^1.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-standard-js": "^1.2.1"
+  }
+}

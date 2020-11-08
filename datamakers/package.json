@@ -1,0 +1,26 @@
+{
+  "name": "datamakers",
+  "version": "1.0.0",
+  "description": "factories for common data structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogoeichert/datamakers.git"
+  },
+  "keywords": [
+    "common",
+    "data",
+    "factory",
+    "make",
+    "structures"
+  ],
+  "author": "Diogo Eichert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diogoeichert/datamakers/issues"
+  },
+  "homepage": "https://github.com/diogoeichert/datamakers#readme"
+}

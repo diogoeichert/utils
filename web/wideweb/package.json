@@ -1,0 +1,39 @@
+{
+  "name": "wideweb",
+  "version": "1.4.2",
+  "description": "All-inclusive web framework for Node.js",
+  "main": "src/index.js",
+  "bin": {
+    "wideweb": "./cli.js"
+  },
+  "scripts": {
+    "test": "eslint . && node ./src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogoeichert/wideweb.git"
+  },
+  "keywords": [
+    "framework",
+    "web",
+    "wide"
+  ],
+  "author": "Diogo Eichert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diogoeichert/wideweb/issues"
+  },
+  "homepage": "https://github.com/diogoeichert/wideweb#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cli-boot": "^1.2.0",
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.3",
+    "package-boot": "^1.6.2",
+    "succinct-router": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-standard-js": "^1.2.0"
+  }
+}

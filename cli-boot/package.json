@@ -1,0 +1,30 @@
+{
+  "name": "cli-boot",
+  "version": "1.2.3",
+  "description": "simple wrapper for command line interfaces",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "eslint . && node ./src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogoeichert/cli-boot.git"
+  },
+  "keywords": [
+    "boot",
+    "cli",
+    "command",
+    "line",
+    "wrapper"
+  ],
+  "author": "Diogo Eichert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diogoeichert/cli-boot/issues"
+  },
+  "homepage": "https://github.com/diogoeichert/cli-boot#readme",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-standard-js": "^1.2.5"
+  }
+}

@@ -1,0 +1,29 @@
+// comment
+
+blah() {
+	t = Thing()
+	t.do()
+}
+
+/*
+comments
+*/
+
+main() {
+	blah()
+}
+
+ParentThing {
+	(a, b) {
+	}
+}
+
+ParentThing > Thing {
+	number = 12345
+
+	do(list) {
+		for (i : list) {
+			print(list[i])
+		}
+	}
+}

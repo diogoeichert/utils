@@ -1,0 +1,30 @@
+{
+  "name": "fileseek",
+  "version": "1.2.2",
+  "description": "Search files recursively based on a regular expression",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "eslint . && node ./src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogoeichert/fileseek.git"
+  },
+  "keywords": [
+    "file",
+    "find",
+    "recursive",
+    "search",
+    "seek"
+  ],
+  "author": "Diogo Eichert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diogoeichert/fileseek/issues"
+  },
+  "homepage": "https://github.com/diogoeichert/fileseek#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-standard-js": "^1.2.0"
+  }
+}
