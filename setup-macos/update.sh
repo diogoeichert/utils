@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BREWFILE=~/Library/Mobile\ Documents/com~apple~CloudDocs/Documents/Brewfile
+BREWFILE=~/Documents/Brewfile
 
 # Check for Xcode Command Line Tools
 if ! xcode-select -p > /dev/null ; then
@@ -27,4 +27,4 @@ git config --global user.name "`contacts -Hm -f '%n'`"
 brew bundle install --file=$BREWFILE --mas
 
 # Save current bundle
-brew bundle dump --describe --file=$BREWFILE-`date +"%Y%m%d"` --force
+brew bundle dump --describe --file=$BREWFILE-`date +"%Y%m%d"`
