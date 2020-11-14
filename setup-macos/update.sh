@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+BREWFILE="~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Documents/Brewfile"
+
 # Check for Xcode Command Line Tools
 if ! xcode-select -p > /dev/null ; then
   xcode-select --install
@@ -22,7 +24,7 @@ git config --global user.email "`contacts -Hm -f '%e'`"
 git config --global user.name "`contacts -Hm -f '%n'`"
 
 # Install apps
-brew bundle install --file=~/Documents/Brewfile
+brew bundle install --file=$BREWFILE
 
 # Update bundle
-brew bundle dump --describe --file=~/Documents/Brewfile --force
+brew bundle dump --describe --file=$BREWFILE --force
