@@ -16,14 +16,6 @@ if ! brew -h > /dev/null ; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-# Use taps
-brew tap homebrew/bundle
-brew tap homebrew/cask
-brew tap homebrew/cask-fonts
-brew tap homebrew/core
-brew tap homebrew/services
-brew tap mas-cli/tap
-
 # Install required packages
 brew install contacts mas node
 
@@ -32,7 +24,7 @@ git config --global user.email "`contacts -Hm -f '%e'`"
 git config --global user.name "`contacts -Hm -f '%n'`"
 
 # Install apps
-brew bundle install --file=$BREWFILE
+brew bundle install --file=$BREWFILE --mas
 
-# Update bundle
-brew bundle dump --describe --file=$BREWFILE --force
+# Save current bundle
+brew bundle dump --describe --file=$BREWFILE-`date +"%Y%m%d"` --force
