@@ -16,8 +16,8 @@ if ! brew -h > /dev/null ; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-# Install packages
-brew install contacts node
+# Install required packages
+brew install contacts mas node
 
 # Setup git
 git config --global user.email "`contacts -Hm -f '%e'`"
