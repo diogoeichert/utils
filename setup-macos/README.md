@@ -10,8 +10,8 @@ This script will:
 
 ## Usage
 ```
-curl https://raw.githubusercontent.com/diogoeichert/utils/main/setup-macos/update.sh | bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/utils/main/setup-macos/update.sh)"
 ```
 
 ## Tip
-Run the script before the clean install to update the bundle.
+Run the script before the clean install to create the current Brewfile.
