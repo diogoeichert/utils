@@ -27,4 +27,4 @@ git config --global user.name "`contacts -Hm -f '%n'`"
 brew bundle install --file=$BREWFILE --mas
 
 # Save current bundle
-brew bundle dump --describe --file=$BREWFILE-`date +"%Y%m%d"`
+brew bundle dump --describe --file=$BREWFILE-`date +"%Y%m%d"` --force
