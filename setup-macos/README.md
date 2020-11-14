@@ -10,7 +10,7 @@ This script will:
 
 ## Usage
 ```
-curl https://raw.githubusercontent.com/diogoeichert/utils/setup-macos/master/update.sh | bash
+curl https://raw.githubusercontent.com/diogoeichert/utils/main/setup-macos/update.sh | bash
 ```
 
 ## Tip
