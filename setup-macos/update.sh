@@ -33,5 +33,5 @@ if [ -f $BREWFILE ] ; then
 	brew bundle install --file=$BREWFILE --mas
 fi
 
-echo Saving current bundle to $CURRENT
-brew bundle dump --describe --file=$CURRENT --force
+brew bundle dump --describe --file=$CURRENT --force > /dev/null &&
+echo Saved current bundle to $CURRENT
