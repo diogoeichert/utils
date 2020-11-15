@@ -2,29 +2,33 @@
 
 BREWFILE=~/Documents/Brewfile
 
-# Check for Xcode Command Line Tools
+echo Checking Command Line Tools installation
+
 if ! xcode-select -p > /dev/null ; then
-  xcode-select --install
+	xcode-select --install
 
-  while ! xcode-select -p > /dev/null ; do
-    sleep 10
-  done
+	while ! xcode-select -p > /dev/null ; do
+		sleep 10
+	done
 fi
 
-# Check for Homebrew
+echo Checking Homebrew installation
+
 if ! brew -h > /dev/null ; then
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-# Install required packages
+echo Installing requirements
 brew install contacts mas node
 
-# Setup git
+echo Setting up git user
 git config --global user.email "`contacts -Hm -f '%e'`"
 git config --global user.name "`contacts -Hm -f '%n'`"
 
-# Install apps
-brew bundle install --file=$BREWFILE --mas
+if [ -f $BREWFILE ] ; then
+	echo Installing bundle from $BREWFILE
+	brew bundle install --file=$BREWFILE --mas
+fi
 
-# Save current bundle
+echo Saving current bundle
 brew bundle dump --describe --file=$BREWFILE-`date +"%Y%m%d"` --force
