@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 BREWFILE=~/Documents/Brewfile
+CURRENT=$BREWFILE-`date +"%Y%m%d"`
 
 echo Checking Command Line Tools installation
 
@@ -18,17 +19,19 @@ if ! brew -h > /dev/null ; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
-echo Installing requirements
-brew install contacts mas node
+echo Checking requirements
+brew ls --version contacts || brew install contacts
+brew ls --version mas || brew install mas
+brew ls --version node || brew install node
 
-echo Setting up git user
-git config --global user.email "`contacts -Hm -f '%e'`"
-git config --global user.name "`contacts -Hm -f '%n'`"
+echo Checking git configuration
+git config user.email || git config --global user.email "`contacts -Hm -f '%e'`"
+git config user.name || git config --global user.name "`contacts -Hm -f '%n'`"
 
 if [ -f $BREWFILE ] ; then
 	echo Installing bundle from $BREWFILE
 	brew bundle install --file=$BREWFILE --mas
 fi
 
-echo Saving current bundle
-brew bundle dump --describe --file=$BREWFILE-`date +"%Y%m%d"` --force
+echo Saving current bundle to $CURRENT
+brew bundle dump --describe --file=$CURRENT --force
