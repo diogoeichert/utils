@@ -20,13 +20,13 @@ if ! brew -h > /dev/null ; then
 fi
 
 echo Checking requirements
-brew ls --version contacts || brew install contacts
-brew ls --version mas || brew install mas
-brew ls --version node || brew install node
+brew ls --version contacts > /dev/null || brew install contacts
+brew ls --version mas > /dev/null || brew install mas
+brew ls --version node > /dev/null || brew install node
 
 echo Checking git configuration
-git config user.email || git config --global user.email "`contacts -Hm -f '%e'`"
-git config user.name || git config --global user.name "`contacts -Hm -f '%n'`"
+git config user.email > /dev/null || git config --global user.email "`contacts -Hm -f '%e'`"
+git config user.name > /dev/null || git config --global user.name "`contacts -Hm -f '%n'`"
 
 if [ -f $BREWFILE ] ; then
 	echo Installing bundle from $BREWFILE
