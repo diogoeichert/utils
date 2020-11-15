@@ -1,17 +1,17 @@
 # setup-macos
-Setup script to be run after a fresh macOS install.
+Setup script to be run after and before reinstalling macOS.
 
 ## Description
 This script will:
 - Ensure the installation of Homebrew and Xcode Command Line Tools;
-- Setup git user name and email address correctly;
+- Configure git user name and email address based on user contact card if not already set;
 - Install the bundle from `~/Documents/Brewfile`;
-- Update the bundle afterwards.
+- Save a new bundle file afterwards, without replacing the original one.
 
 ## Usage
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/utils/main/setup-macos/update.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/utils/main/setup-macos/setup.sh)"
 ```
 
 ## Tip
-Run the script before the clean install to create the current Brewfile.
+Run the script before the clean install to create Brewfile with the current snapshot. Run it again after reinstalling to reinstall the bundle.
