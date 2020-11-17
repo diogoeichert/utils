@@ -1,4 +1,4 @@
-Collection of tools and utilities that can be hoperfully useful to the public.
+Collection of tools and utilities that *work on my machine*, hopefully also useful to somebody else. If they don't, please kindly accept the refund of $0 invested to try them out. Thanks for understanding.
 
 # [macOS Setup](https://diogoeichert.github.io/utils/macos-setup)
 This scripts helps with the burden of performing a fresh macOS installation.
