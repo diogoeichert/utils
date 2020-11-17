@@ -1,4 +1,4 @@
-# setup-macos
+# macos-setup
 Setup script to be run after and before reinstalling macOS.
 
 ## Description
@@ -10,7 +10,7 @@ This script will:
 
 ## Usage
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/utils/main/setup-macos/setup.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/utils/main/macos-setup/install.sh)"
 ```
 
 ## Tip
