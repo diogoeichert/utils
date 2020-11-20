@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-standard-js": "^1.3.2"
+  }
+}
