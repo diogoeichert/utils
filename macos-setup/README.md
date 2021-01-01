@@ -8,9 +8,11 @@ This script will:
 - Save a new bundle file afterwards, without replacing the original one.
 
 # Usage
+Copy and paste the snippet below in the Terminal and hit Enter:
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/utils/main/macos-setup/install.sh)"
 ```
+The file will be saved with the current date, rename it to `Brewfile` to use it as your current bundle.
 
 ## Tip
 Run the script before the clean install to create Brewfile with the current snapshot. Run it again after reinstalling to reinstall the bundle.
