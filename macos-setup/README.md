@@ -2,9 +2,9 @@ Setup script to be run after and before reinstalling [macOS](https://www.apple.c
 
 # Description
 This script will:
-- Ensure the installation of Homebrew and Xcode Command Line Tools;
+- Ensure the installation of [Homebrew](https://brew.sh/) and [Xcode Command Line Tools](https://developer.apple.com/download/more/?=xcode);
 - Configure git user name and email address based on user contact card if not already set;
-- Install the bundle from `~/Documents/Brewfile`;
+- Install the bundle from `~/Documents/Brewfile` if present;
 - Save a new bundle file afterwards, without replacing the original one.
 
 # Usage
