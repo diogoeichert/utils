@@ -1,11 +1,18 @@
-Collection of tools and utilities that I use myself, hopefully also useful to somebody else. If they help you save time, please consider [buying me a coffee](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=diogoeichert%40icloud.com&item_name=Coffee&currency_code=EUR). If they don't, please kindly [open a new issue](https://github.com/diogoeichert/utils/issues/new/choose) so that they can be fixed. Thank you.
+Setup script to be run after and before reinstalling [macOS](https://www.apple.com/macos).
 
-# Tools
+# Description
+This script will:
+- Ensure the installation of [Homebrew](https://brew.sh/) and [Xcode Command Line Tools](https://developer.apple.com/download/more/?=xcode);
+- Configure git user name and email address based on user contact card if not already set;
+- Install the bundle from `~/Documents/Brewfile` if present;
+- Save a new bundle file afterwards, without replacing the original one.
 
-## [macOS Setup](https://diogoeichert.github.io/utils/macos-setup)
-This scripts aims to help with the burden of performing a fresh [macOS](https://www.apple.com/macos) installation.
+# Usage
+Copy and paste the snippet below in the Terminal and hit Enter:
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/utils/main/macos-setup/install.sh)"
+```
+The file will be saved with the current date, rename it to `Brewfile` to use it as your current bundle.
 
-# Libraries
-
-## [npm Packages](https://www.npmjs.com/~diogoeichert)
-Some npm packages that can be used in [Node.js](https://nodejs.org) projects.
+## Tip
+Run the script before the clean install to create Brewfile with the current snapshot. Run it again after reinstalling to reinstall the bundle.
