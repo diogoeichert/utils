@@ -1,3 +1,3 @@
 module.exports = {
-    "extends": "standard-js"
+	"extends": "classic"
 };

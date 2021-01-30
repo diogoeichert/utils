@@ -1,21 +1,21 @@
 "use strict";
 
 function makeEnum(array) {
-  return makeHashSet(array, true);
+	return makeHashSet(array, true);
 }
 
 function makeHashSet(array, indexed) {
-  const RESULT = {};
+	const RESULT = {};
 
-  for (let i = 0; i < array.length; ++i) {
-    const VALUE = array[i];
-    RESULT[VALUE] = indexed ? i : VALUE;
-  }
+	for (let i = 0; i < array.length; ++i) {
+		const VALUE = array[i];
+		RESULT[VALUE] = indexed ? i : VALUE;
+	}
 
-  return RESULT;
+	return RESULT;
 }
 
 module.exports = {
-  makeEnum,
-  makeHashSet
+	makeEnum,
+	makeHashSet
 };
