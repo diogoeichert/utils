@@ -10,7 +10,7 @@ This script will:
 # Usage
 Copy and paste the snippet below in the Terminal and hit Enter:
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/utils/main/macos-setup/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/diogoeichert/macos-setup/main/install.sh)"
 ```
 The file will be saved with the current date, rename it to `Brewfile` to use it as your current bundle.
 
